@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>straż pożarna</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Straż Pożarna</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-black text-yellow-300 font-sans">
+<body class="bg-black text-yellow-300 font-sans min-h-screen flex flex-col">
 
-    <header class="bg-black border-b border-yellow-500 p-4 flex justify-between items-center">
-        <img src="assets/logo.png" alt="Złota Gwardia" class="h-16">
-        <nav class="space-x-4 text-lg">
-            <a href="#home" class="hover:text-white">Strona główna</a>
-            <a href="#about" class="hover:text-white">O nas</a>
-            <a href="#services" class="hover:text-white">Cennik zabezpieczeń imprez i inne</a>
-            <a href="#pricing" class="hover:text-white">Rodzaje zaleceń </a>
-            <a href="#units" class="hover:text-white">Pakiety VIP </a>
-            <a href="#regulamin" class="hover:text-white">Regulamin</a> <!-- Link do regulaminu -->
-        </nav>
-    </header>
+  <header class="bg-black border-b border-yellow-500 p-4 flex justify-between items-center">
+    <img src="assets/logo.png" alt="Złota Gwardia" class="h-16" />
+    <nav class="space-x-6 text-lg font-medium">
+      <a href="#home" class="hover:text-white transition">Strona główna</a>
+      <a href="#about" class="hover:text-white transition">O nas</a>
+      <a href="#services" class="hover:text-white transition">Cennik zabezpieczeń imprez i inne</a>
+      <a href="#pricing" class="hover:text-white transition">Cennik</a>
+      <a href="#units" class="hover:text-white transition">Jednostki</a>
+      <a href="#news" class="hover:text-white transition">Aktualności</a>
+      <a href="#contact" class="hover:text-white transition">Kontakt</a>
+      <a href="#regulamin" class="hover:text-white transition">Regulamin</a>
+    </nav>
+  </header>
 
-    <section id="home" class="h-screen flex flex-col items-center justify-center text-center p-10">
-        <h1 class="text-5xl font-bold mb-4">straż pożarna </h1>
-        <p class="text-xl">strona straży pożarnej w <strong>𝙼𝙸𝙰𝚂𝚃𝙴𝙲𝚉𝙺𝙾 𝚁𝙿</strong></p>
+  <main class="flex-grow">
+    <section
+      id="home"
+      class="h-screen flex flex-col items-center justify-center text-center px-6"
+    >
+      <h1 class="text-5xl font-extrabold mb-4 uppercase tracking-wide">Straż Pożarna</h1>
+      <p class="text-xl max-w-xl">
+        Strona straży pożarnej w <strong class="font-mono">𝙼𝙸𝙰𝚂𝚃𝙴𝙲𝚉𝙺𝙾 𝚁𝙿</strong>
+      </p>
     </section>
 
-    <section id="about" class="p-10 bg-gray-900">
-        <h2 class="text-3xl font-semibold mb-4">O nas</h2>
-        <p>Jesteśmy jednostką JRG 3  w gdańsku w grze roblox . Naszym celem jest ratowanie życia ludzkiego i zwierząt , zapewnienia bezpieczeństwa wszystkim oraz  zachowanie porządku </p>
+    <section id="about" class="p-10 bg-gray-900 max-w-5xl mx-auto rounded-md shadow-md my-12">
+      <h2 class="text-3xl font-semibold mb-4 border-b border-yellow-500 pb-2">O nas</h2>
+      <p class="text-yellow-200 leading-relaxed">
+        Jesteśmy jednostką JRG 3 w Gdańsku w grze Roblox. Naszym celem jest ratowanie życia ludzkiego i zwierząt, zapewnienie bezpieczeństwa wszystkim oraz zachowanie porządku.
+      </p>
     </section>
 
-    <section id="services" class="p-10 bg-black">
-        <h2 class="text-3xl font-semibold mb-4">Cennik zabezpieczeń imprez i inne</h2>
-        <ul class="list-disc list-inside">
-            <li>•2 auta + karetka= 7,000 nie     dostępne </li>
-            <li>•1 auto + karetka =4,000 nie     dostępne</li>
-            <li>•1 karetka = 1,000 nie     dostępne</li>
-            <li>•1 auto = 3,000</li>
-            <li>•2 auta=6,000</li>
-        </ul>
+    <section id="services" class="p-10 bg-black max-w-5xl mx-auto rounded-md shadow-md my-12 border border-yellow-500">
+      <h2 class="text-3xl font-semibold mb-6 border-b border-yellow-500 pb-2">Cennik zabezpieczeń imprez i inne</h2>
+      <ul class="list-disc list-inside space-y-2 text-yellow-300 text-lg">
+        <li>2 auta + karetka = 7,000 (nie dostępne)</li>
+        <li>1 auto + karetka = 4,000 (nie dostępne)</li>
+        <li>1 karetka = 1,000 (nie dostępne)</li>
+        <li>1 auto = 3,000</li>
+        <li>2 auta = 6,000</li>
+      </ul>
     </section>
 
-    <section id="pricing" class="p-10 bg-gray-900">
-        <h2 class="text-3xl font-semibold mb-4">Rodzaje zaleceń </h2>
+    <section id="pricing" class="p-10 bg-gray-900 max-w-5xl mx-auto rounded-md shadow-md my-12">
+      <h2 class="text-3xl font-semibold mb-6 border-b border-yellow-500 pb-2">Rodzaje zaleceń</h2>
 
-        <h3 class="text-xl font-bold mt-6 mb-2">🚗 Wielkość eskorty</h3>
-        <ul class="list-disc list-inside mb-4">
-            <li>•Cało dniowe zabezpieczenie czyli 24h </li>
-            <li>•zabawy z wodą i wężami </li>
-            <li>•przejażdżka autem po całym mieście </li>
+      <article class="mb-8">
+        <h3 class="text-2xl font-bold mb-3 flex items-center gap-2">🚗 Wielkość eskorty</h3>
+        <ul class="list-disc list-inside space-y-2 text-yellow-300">
+          <li>Całodniowe zabezpieczenie, czyli 24h</li>
+          <li>Zabawy z wodą i wężami</li>
+          <li>Przejażdżka autem po całym mieście</li>
         </ul>
-     </section>
-    
-        <h3 class="text-xl font-bold mt-6 mb-2">Pakiety VIP </h3>
-        <h3 class="text-3xl font-semibold mb-4">Rodzaje zaleceń </h3>
+      </article>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Pakiety VIP </h3>
-        <ul class="list-disc list-inside mb-4">
-            <li>•Premium 2 dniowe zabezpieczenie czyli 48h </li>
-            <li>Dodatkowe opłaty </li>
-            <li>•Przejażdżka na kogutach po parkingu Harbor (+500) </li>
-            <li>•Pobawienie się kogutami dzwiękowymi i migającymi (+500) </li>
-            <li>•Zaproszenie HOT strażaków lat 25 i bez ubranej góry 😈😏 (1,500)     nie dostępne </li>
+      <article>
+        <h3 class="text-2xl font-bold mb-3">Pakiety VIP</h3>
+        <ul class="list-disc list-inside space-y-2 text-yellow-300">
+          <li>Premium 2-dniowe zabezpieczenie, czyli 48h</li>
+          <li>Dodatkowe opłaty:</li>
+          <li>Przejażdżka na kogutach po parkingu Harbor (+500)</li>
+          <li>Pobawienie się kogutami dźwiękowymi i migającymi (+500)</li>
+          <li>Zaproszenie HOT strażaków lat 25 i bez ubranej góry 😈😏 (1,500) – nie dostępne</li>
         </ul>
-        
-        </ul>
+      </article>
     </section>
 
-        </ul>
+    <section id="regulamin" class="p-10 bg-black max-w-5xl mx-auto rounded-md shadow-md my-12 border border-yellow-500">
+      <h2 class="text-3xl font-semibold mb-4 border-b border-yellow-500 pb-2">Regulamin</h2>
+      <p class="mb-6 text-yellow-200 leading-relaxed">
+        Nasz regulamin obowiązuje w każdym przypadku zamówienia i stanowi podstawę naszych usług. Zapraszamy do zapoznania się z jego pełną treścią.
+      </p>
+      <ul class="list-disc list-inside space-y-2 text-yellow-300">
+        <li>
+          Jesteśmy jednostką JRG 3 w Gdańsku w grze Roblox. Naszym celem jest ratowanie życia ludzkiego i zwierząt, zapewnienie bezpieczeństwa wszystkim oraz zachowanie porządku.
+        </li>
+      </ul>
     </section>
-
-    <!-- Regulamin -->
-    <section id="regulamin"p-10 bg-gray-900">
-        <h2 class="text-3xl font-semibold mb-4">Regulamin</h2>
-        <p class="mb-4">Nasz regulamin obowiązuje w każdym przypadku zamówienia  i stanowi podstawę naszych usług. Zapraszamy do zapoznania się z jego pełną treścią.</p>
-        <ul class="list-disc list-inside">
-            <li>Jesteśmy jednostką JRG 3  w gdańsku w grze roblox . Naszym celem jest ratowanie życia ludzkiego i zwierząt , zapewnienia bezpieczeństwa wszystkim oraz  zachowanie porządku </li>
-        </ul>
-    </section>
+  </main>
 
 </body>
 </html>
